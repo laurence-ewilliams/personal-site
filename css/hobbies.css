@@ -1,0 +1,73 @@
+body {
+    background-color: black !important;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: #00c7ff;
+}
+
+img {
+    border-radius: 50%;
+    width: 25%;
+}
+
+img:hover {
+    border-radius: 0%;
+    transition: 1s;
+}
+
+.logo {
+    width: 32px;
+}
+
+.nav-link {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.main-header {
+    text-align: center;
+    animation: fadein 1s ease-out;
+}
+
+.secondary-header {
+    font-size: 20px;
+    margin: 50px 0 50px 100px;
+    text-align: left;
+    animation: fadein 3s ease-out;
+    color: white;
+}
+
+.imgs {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation: fadein 5s ease-out;
+}
+
+.imgs:last-of-type {
+    margin-bottom: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

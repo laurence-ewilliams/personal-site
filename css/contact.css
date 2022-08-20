@@ -1,0 +1,115 @@
+body {
+    background-color: black !important;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: #00c7ff;
+    animation: fadein 2s;
+}
+
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: #F4F9F9;
+    animation: fadein 2s;
+}
+
+svg {
+    margin: 10px auto;
+}
+
+.logo {
+    width: 32px;
+}
+
+.nav-link {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 200px auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    animation: fadein 3s;
+}
+
+.bi-telephone {
+    margin-top: 50px;
+}
+
+.mail-address,
+.phone-nums {
+    font-family: 'Lexend Exa', sans-serif;
+    text-decoration: underline;
+    color: #F4F9F9;
+    font-size: 1rem;
+}
+
+.mail-address:hover,
+.phone-nums:hover {
+    color: rgb(80, 80, 80);
+}
+
+.msg-img {
+    width: 50%;
+    animation: fadein 5s, moveup 3s;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .msg-img {
+        width: 100%;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveup {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}

@@ -1,0 +1,128 @@
+body {
+    background-color: black !important;
+    background-image: url(../images/collage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: #00c7ff;
+}
+
+.logo {
+    width: 32px;
+}
+
+.nav-link {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    width: 50%;
+    position: absolute;
+    padding-top: 100px;
+    margin: 150px 20px 20px 100px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    animation: fadein 5s, moveup 3s;
+}
+
+.face-pic {
+    display: none;
+    width: 20%;
+    margin: 20px 20px;
+}
+
+.more-about {
+    margin-top: 15px;
+    color: rgb(221, 221, 221);
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 16px;
+}
+
+.collage {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: none;
+    }
+
+    .profile {
+        width: 100%;
+        margin: 100px 0 0 0;
+        padding: 20px 50px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .face-pic {
+        display: flex;
+        align-self: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .profile {
+        width: 100%;
+        margin: 100px 0 0 0;
+        padding: 20px 50px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .face-pic {
+        display: flex;
+        align-self: center;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveup {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes moveleft {
+    from {
+        transform: translateX(500px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
